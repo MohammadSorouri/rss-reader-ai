@@ -2,9 +2,9 @@
 
 > **Turn your chaotic, bloated RSS feeds into highly dense, 3-minute personalized audio briefings. Powered by gpt-oss-120b.**
 
-[![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue.svg?logo=telegram&style=for-the-badge)](https://t.me/RSS_READER_AI_Bot)
-[![AI Engine](https://img.shields.io/badge/AI_Engine-gpt--oss--120b-purple.svg?style=for-the-badge)](https://t.me/RSS_READER_AI_Bot)
-[![TTS Engine](https://img.shields.io/badge/TTS-Edge--TTS-orange.svg?style=for-the-badge)](https://t.me/RSS_READER_AI_Bot)
+[![Telegram Bot](https://img.shields.io/badge/Telegram-Bot-blue.svg?logo=telegram&style=for-the-badge)](https://telegram.me/RSS_READER_AI_Bot)
+[![AI Engine](https://img.shields.io/badge/AI_Engine-gpt--oss--120b-purple.svg?style=for-the-badge)](https://telegram.me/RSS_READER_AI_Bot)
+[![TTS Engine](https://img.shields.io/badge/TTS-Edge--TTS-orange.svg?style=for-the-badge)](https://telegram.me/RSS_READER_AI_Bot)
 
 ---
 
@@ -16,7 +16,7 @@ Most people abandon RSS readers because of information overload. Subscribing to 
 
 ### 🚀 Try It Now
 Click the badge below to launch the bot directly on Telegram:
-### [👉 LAUNCH BOT ON TELEGRAM 👈](https://t.me/RSS_READER_AI_Bot)
+### [👉 LAUNCH BOT ON TELEGRAM 👈](https://telegram.me/RSS_READER_AI_Bot)
 
 ---
 
@@ -41,7 +41,7 @@ Manage folders, subscriptions, and sync intervals (30 minutes, 2 hours, or manua
 
 ## 🛠️ How to Get Started
 
-1. Click **[Launch Bot on Telegram](https://t.me/RSS_READER_AI_Bot)**.
+1. Click **[Launch Bot on Telegram](https://telegram.me/RSS_READER_AI_Bot)**.
 2. Hit `/start` to initialize your workspace.
 3. Import your OPML subscription file or add feeds manually.
 4. Set your sync interval and let the AI compile your briefings.
