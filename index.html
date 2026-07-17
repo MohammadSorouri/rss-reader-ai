@@ -844,6 +844,11 @@
 
     // Auto-detect and run language initialization
     document.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const queryLang = urlParams.get('lang');
+        if (queryLang && ['en', 'fa', 'ru', 'es'].includes(queryLang)) {
+            localStorage.setItem('lang', queryLang);
+        }
         let savedLang = localStorage.getItem('lang');
         if (!savedLang) {
             const browserLang = navigator.language || navigator.userLanguage;
