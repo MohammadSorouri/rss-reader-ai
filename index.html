@@ -104,11 +104,11 @@
 
     <!-- Navigation -->
     <nav class="border-b border-slate-800/80 backdrop-blur-md bg-darkbg/80 fixed w-full top-0 z-50 transition-all">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2 sm:gap-3">
                 <!-- Glowing Cybernetic Eagle Logo -->
-                <img src="logo.png" alt="RSS Reader AI Logo" class="h-10 w-10 rounded-xl border border-blue-500/30 shadow-neon-blue object-cover" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/MohammadSorouri/rss-reader-ai/main/logo.png';">
-                <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-100 to-blue-500 bg-clip-text text-transparent">RSS Reader AI</span>
+                <img src="logo.png" alt="RSS Reader AI Logo" class="h-8 w-8 sm:h-10 sm:w-10 rounded-xl border border-blue-500/30 shadow-neon-blue object-cover" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/MohammadSorouri/rss-reader-ai/main/logo.png';">
+                <span class="text-sm sm:text-base md:text-xl font-extrabold tracking-tight whitespace-nowrap bg-gradient-to-r from-white via-slate-100 to-blue-500 bg-clip-text text-transparent">RSS Reader AI</span>
             </div>
             <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
                 <a href="#features" class="hover:text-white transition" data-i18n="nav_features">Features</a>
@@ -116,16 +116,16 @@
                 <a href="#pricing" class="hover:text-white transition" data-i18n="nav_pricing">Pricing</a>
                 
             </div>
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-2 sm:gap-4">
                 <!-- Language Switcher Pill -->
-                <div class="flex items-center gap-1 bg-slate-900/80 border border-slate-800/80 p-1 rounded-full text-xs">
-                    <button onclick="setLanguage('en')" id="lang-btn-en" class="px-2.5 py-1.5 rounded-full hover:bg-slate-800 transition-all font-bold" title="English">🇬🇧</button>
-                    <button onclick="setLanguage('fa')" id="lang-btn-fa" class="px-2.5 py-1.5 rounded-full hover:bg-slate-800 transition-all font-bold" title="فارسی">🇮🇷</button>
-                    <button onclick="setLanguage('ru')" id="lang-btn-ru" class="px-2.5 py-1.5 rounded-full hover:bg-slate-800 transition-all font-bold" title="Русский">🇷🇺</button>
-                    <button onclick="setLanguage('es')" id="lang-btn-es" class="px-2.5 py-1.5 rounded-full hover:bg-slate-800 transition-all font-bold" title="Español">🇪🇸</button>
+                <div class="flex items-center gap-0.5 sm:gap-1 bg-slate-900/80 border border-slate-800/80 p-0.5 sm:p-1 rounded-full text-[10px] sm:text-xs">
+                    <button onclick="setLanguage('en')" id="lang-btn-en" class="px-1.5 py-1 sm:px-2.5 sm:py-1.5 rounded-full hover:bg-slate-800 transition-all font-bold" title="English">🇬🇧</button>
+                    <button onclick="setLanguage('fa')" id="lang-btn-fa" class="px-1.5 py-1 sm:px-2.5 sm:py-1.5 rounded-full hover:bg-slate-800 transition-all font-bold" title="فارسی">🇮🇷</button>
+                    <button onclick="setLanguage('ru')" id="lang-btn-ru" class="px-1.5 py-1 sm:px-2.5 sm:py-1.5 rounded-full hover:bg-slate-800 transition-all font-bold" title="Русский">🇷🇺</button>
+                    <button onclick="setLanguage('es')" id="lang-btn-es" class="px-1.5 py-1 sm:px-2.5 sm:py-1.5 rounded-full hover:bg-slate-800 transition-all font-bold" title="Español">🇪🇸</button>
                 </div>
-                <a href="https://telegram.me/RSS_READER_AI_Bot" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold px-5 py-2.5 rounded-full shadow-neon-blue transition duration-300 flex items-center gap-2">
-                    <i class="fa-brands fa-telegram text-lg"></i> <span data-i18n="nav_launch">Launch Bot</span>
+                <a href="https://telegram.me/RSS_READER_AI_Bot" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-xs sm:text-sm font-bold px-3 py-2 sm:px-5 sm:py-2.5 rounded-full shadow-neon-blue transition duration-300 flex items-center gap-1.5 sm:gap-2">
+                    <i class="fa-brands fa-telegram text-base sm:text-lg"></i> <span class="hidden sm:inline" data-i18n="nav_launch">Launch Bot</span>
                 </a>
             </div>
         </div>
