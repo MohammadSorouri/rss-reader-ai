@@ -64,6 +64,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>body { font-family: "Plus Jakarta Sans", sans-serif; }</style>
+    </script>
+    
+    <!-- FAQPage Structured Data (JSON-LD) for SEO Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is RSS Reader AI and how does it work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "RSS Reader AI is an intelligent Telegram bot that converts standard RSS feeds, newsletters, and blogs into concise AI-generated summaries and natural-sounding audio podcasts. It runs in the background and delivers content straight to your Telegram chat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I subscribe to my own custom RSS feeds?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Once you start the bot, open the interactive dashboard menu and click 'Feeds'. You can manually add any custom RSS, Atom, or Substack URL, or even upload an OPML file to import all your feeds instantly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the text-to-speech (podcast) feature work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our backend uses advanced Edge-TTS text-to-speech technology. When a summary digest is generated, the bot converts the text into a clear, human-like audio voice message. You can listen to it like a daily podcast while commuting, working out, or doing chores."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is RSS Reader AI free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! The Starter Plan is 100% free forever. It allows you to add custom feeds, perform up to 3 AI summaries per day, and listen to standard-quality podcasts. To unlock unlimited summaries, premium voices, and 5-minute sync intervals, you can upgrade to Premium using Telegram Stars."
+          }
+        }
+      ]
+    }
+    </script>
     <!-- Microsoft Clarity -->
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
@@ -114,6 +157,7 @@
                 <a href="#features" class="hover:text-white transition" data-i18n="nav_features">Features</a>
                 <a href="#how-it-works" class="hover:text-white transition" data-i18n="nav_how">How it Works</a>
                 <a href="#pricing" class="hover:text-white transition" data-i18n="nav_pricing">Pricing</a>
+                <a href="#faq" class="hover:text-white transition" data-i18n="nav_faq">FAQ</a>
                 
             </div>
             <div class="flex items-center gap-2 sm:gap-4">
@@ -388,6 +432,36 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 max-w-4xl mx-auto px-6 border-t border-slate-900">
+        <div class="text-center space-y-4 mb-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white" data-i18n="faq_title">Frequently Asked Questions</h2>
+            <p class="text-slate-400 max-w-xl mx-auto" data-i18n="faq_sub">Everything you need to know about RSS Reader AI</p>
+        </div>
+        <div class="space-y-6">
+            <!-- Q1 -->
+            <div class="bg-cardbg border border-slate-800/80 p-6 rounded-2xl">
+                <h3 class="text-lg md:text-xl font-bold text-white mb-2" data-i18n="faq_q1">What is RSS Reader AI and how does it work?</h3>
+                <p class="text-slate-400 leading-relaxed text-sm md:text-base" data-i18n="faq_a1">RSS Reader AI is an intelligent Telegram bot that converts standard RSS feeds, newsletters, and blogs into concise AI-generated summaries and natural-sounding audio podcasts. It runs in the background and delivers content straight to your Telegram chat.</p>
+            </div>
+            <!-- Q2 -->
+            <div class="bg-cardbg border border-slate-800/80 p-6 rounded-2xl">
+                <h3 class="text-lg md:text-xl font-bold text-white mb-2" data-i18n="faq_q2">How do I subscribe to my own custom RSS feeds?</h3>
+                <p class="text-slate-400 leading-relaxed text-sm md:text-base" data-i18n="faq_a2">Once you start the bot, open the interactive dashboard menu and click "Feeds". You can manually add any custom RSS, Atom, or Substack URL, or even upload an OPML file to import all your feeds instantly.</p>
+            </div>
+            <!-- Q3 -->
+            <div class="bg-cardbg border border-slate-800/80 p-6 rounded-2xl">
+                <h3 class="text-lg md:text-xl font-bold text-white mb-2" data-i18n="faq_q3">How does the text-to-speech (podcast) feature work?</h3>
+                <p class="text-slate-400 leading-relaxed text-sm md:text-base" data-i18n="faq_a3">Our backend uses advanced Edge-TTS text-to-speech technology. When a summary digest is generated, the bot converts the text into a clear, human-like audio voice message. You can listen to it like a daily podcast while commuting, working out, or doing chores.</p>
+            </div>
+            <!-- Q4 -->
+            <div class="bg-cardbg border border-slate-800/80 p-6 rounded-2xl">
+                <h3 class="text-lg md:text-xl font-bold text-white mb-2" data-i18n="faq_q4">Is RSS Reader AI free to use?</h3>
+                <p class="text-slate-400 leading-relaxed text-sm md:text-base" data-i18n="faq_a4">Yes! The Starter Plan is 100% free forever. It allows you to add custom feeds, perform up to 3 AI summaries per day, and listen to standard-quality podcasts. To unlock unlimited summaries, premium voices, and 5-minute sync intervals, you can upgrade to Premium using Telegram Stars.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="py-24 px-6 text-center max-w-5xl mx-auto relative">
         <div class="absolute inset-0 bg-blue-600/10 blur-[100px] rounded-full -z-10"></div>
@@ -482,6 +556,17 @@
             cta_title: "Master Information Overload Today.",
             cta_desc: "Let AI read, summarize, and play your feeds on autopilot. Join the future of content consumption on Telegram.",
             cta_btn: "Start Free on Telegram",
+            nav_faq: "FAQ",
+            faq_title: "Frequently Asked Questions",
+            faq_sub: "Everything you need to know about RSS Reader AI",
+            faq_q1: "What is RSS Reader AI and how does it work?",
+            faq_a1: "RSS Reader AI is an intelligent Telegram bot that converts standard RSS feeds, newsletters, and blogs into concise AI-generated summaries and natural-sounding audio podcasts. It runs in the background and delivers content straight to your Telegram chat.",
+            faq_q2: "How do I subscribe to my own custom RSS feeds?",
+            faq_a2: "Once you start the bot, open the interactive dashboard menu and click \"Feeds\". You can manually add any custom RSS, Atom, or Substack URL, or even upload an OPML file to import all your feeds instantly.",
+            faq_q3: "How does the text-to-speech (podcast) feature work?",
+            faq_a3: "Our backend uses advanced Edge-TTS text-to-speech technology. When a summary digest is generated, the bot converts the text into a clear, human-like audio voice message. You can listen to it like a daily podcast while commuting, working out, or doing chores.",
+            faq_q4: "Is RSS Reader AI free to use?",
+            faq_a4: "Yes! The Starter Plan is 100% free forever. It allows you to add custom feeds, perform up to 3 AI summaries per day, and listen to standard-quality podcasts. To unlock unlimited summaries, premium voices, and 5-minute sync intervals, you can upgrade to Premium using Telegram Stars.",
             footer_text: "© 2026 RSS Reader AI. All rights reserved. Co-developed with ❤️ by Athena & Mohammad."
         },
         fa: {
@@ -548,6 +633,17 @@
             cta_title: "امروز بر حجم زیاد اطلاعات مسلط شوید.",
             cta_desc: "بگذارید هوش مصنوعی فیدهای شما را به صورت خودکار بخواند، خلاصه کند و پخش کند. به آینده مصرف محتوا در تلگرام بپیوندید.",
             cta_btn: "شروع رایگان در تلگرام",
+            nav_faq: "سوالات متداول",
+            faq_title: "سوالات متداول",
+            faq_sub: "هر آنچه که باید درباره RSS Reader AI بدانید",
+            faq_q1: "ربات RSS Reader AI چیست و چگونه کار می‌کند؟",
+            faq_a1: "ربات RSS Reader AI یک ربات هوشمند تلگرام است که فیدهای استاندارد RSS، خبرنامه‌ها و وبلاگ‌ها را به خلاصه‌های کوتاه هوش مصنوعی و پادکست‌های صوتی با صدای طبیعی تبدیل می‌کند. این ربات در پس‌زمینه اجرا شده و مطالب را مستقیماً به تلگرام شما ارسال می‌کند.",
+            faq_q2: "چگونه فیدهای RSS دلخواه خود را اضافه کنم؟",
+            faq_a2: "پس از شروع کار با ربات، منوی داشبورد تعاملی را باز کرده و روی «فیدها» کلیک کنید. شما می‌توانید هر آدرس RSS، Atom یا Substack اختصاصی را به صورت دستی اضافه کنید یا فایل OPML خود را آپلود کنید تا تمام فیدها فوراً وارد شوند.",
+            faq_q3: "ویژگی تبدیل متن به گفتار (پادکست) چگونه کار می‌کند؟",
+            faq_a3: "بک‌اند ما از فناوری پیشرفته تبدیل متن به گفتار Edge-TTS استفاده می‌کند. وقتی خلاصه‌ای تولید می‌شود، ربات متن را به یک پیام صوتی واضح و شبیه به انسان تبدیل می‌کند. شما می‌توانید در حین رفت‌وآمد، ورزش یا کارهای خانه به عنوان پادکست روزانه به آن گوش دهید.",
+            faq_q4: "آیا استفاده از RSS Reader AI رایگان است؟",
+            faq_a4: "بله! پلن Starter برای همیشه ۱۰۰٪ رایگان است. به شما اجازه می‌دهد فیدهای دلخواه را اضافه کنید، تا ۳ خلاصه هوش مصنوعی در روز بگیرید و به پادکست‌ها گوش دهید. برای باز کردن خلاصه‌های نامحدود، صداهای پرمیوم و همگام‌سازی ۵ دقیقه‌ای، می‌توانید با تلگرام استارز به پرمیوم ارتقا دهید.",
             footer_text: "© ۲۰۲۶ آر اس اس ریدر هوش مصنوعی. تمامی حقوق محفوظ است. توسعه‌یافته با عشق توسط آتنا و محمد."
         },
         ru: {
@@ -614,6 +710,17 @@
             cta_title: "Управляйте потоком информации уже сегодня.",
             cta_desc: "Позвольте искусственному интеллекту читать, обобщать и воспроизводить ваши новости на автопилоте. Присоединяйтесь к будущему потребления контента в Telegram.",
             cta_btn: "Начать бесплатно в Telegram",
+            nav_faq: "Часто задаваемые вопросы",
+            faq_title: "Часто задаваемые вопросы",
+            faq_sub: "Все, что вам нужно знать о RSS Reader AI",
+            faq_q1: "Что такое RSS Reader AI и как это работает?",
+            faq_a1: "RSS Reader AI — это умный Telegram-бот, который превращает стандартные RSS-ленты, рассылки и блоги в лаконичные сводки от ИИ и естественно звучащие аудиоподкасты. Он работает в фоновом режиме и доставляет контент прямо в ваш Telegram.",
+            faq_q2: "Как подписаться на собственные RSS-ленты?",
+            faq_a2: "После запуска бота откройте меню интерактивного дашборда и нажмите \"Feeds\". Вы можете вручную добавить любой собственный URL-адрес RSS, Atom или Substack или загрузить файл OPML для мгновенного импорта всех ваших лент.",
+            faq_q3: "Как работает функция преобразования текста в речь (подкаст)?",
+            faq_a3: "Наш бэкенд использует продвинутую технологию преобразования текста в речь Edge-TTS. Когда генерируется сводка, бот преобразует текст в четкое, похожее на человеческое аудиосообщение. Вы можете слушать его как ежедневный подкаст во время поездок, тренировок или домашних дел.",
+            faq_q4: "Является ли RSS Reader AI бесплатным?",
+            faq_a4: "Да! Стартовый план на 100% бесплатен навсегда. Он позволяет добавлять собственные ленты, делать до 3 сводок от ИИ в день и слушать подкасты стандартного качества. Чтобы разблокировать безлимитные сводки, премиум-голоса и 5-минутную синхронизацию, вы можете перейти на Premium с помощью Telegram Stars.",
             footer_text: "© 2026 RSS Reader AI. Все права защищены. Разработано с ❤️ Athena & Mohammad."
         },
         es: {
@@ -680,6 +787,17 @@
             cta_title: "Domina la sobrecarga de información hoy.",
             cta_desc: "Deja que la inteligencia artificial lea, resuma y reproduzca tus noticias en piloto automático. Únete al futuro del consumo de contenido en Telegram.",
             cta_btn: "Empezar Gratis en Telegram",
+            nav_faq: "FAQ",
+            faq_title: "Preguntas Frecuentes",
+            faq_sub: "Todo lo que necesitas saber sobre RSS Reader AI",
+            faq_q1: "¿Qué es RSS Reader AI y cómo funciona?",
+            faq_a1: "RSS Reader AI es un bot inteligente de Telegram que convierte fuentes RSS estándar, boletines y blogs en resúmenes generados por IA y podcasts de audio con sonido natural. Se ejecuta en segundo plano y entrega el contenido directamente a tu chat de Telegram.",
+            faq_q2: "¿Cómo me suscribo a mis propias fuentes RSS?",
+            faq_a2: "Una vez que inicies el bot, abre el menú del panel interactivo y haz clic en \"Feeds\". Puedes agregar manualmente cualquier URL personalizada de RSS, Atom o Substack, o incluso subir un archivo OPML para importar todas tus fuentes al instante.",
+            faq_q3: "¿Cómo funciona la función de texto a voz (podcast)?",
+            faq_a3: "Nuestro backend utiliza tecnología avanzada de texto a voz Edge-TTS. Cuando se genera un resumen, el bot convierte el texto en un mensaje de voz de audio claro y similar al humano. Puedes escucharlo como un podcast diario mientras viajas, haces ejercicio o haces las tareas del hogar.",
+            faq_q4: "¿RSS Reader AI es de uso gratuito?",
+            faq_a4: "¡Sí! El Plan Starter es 100% gratuito para siempre. Te permite agregar fuentes personalizadas, realizar hasta 3 resúmenes de IA al día y escuchar podcasts de calidad estándar. Para desbloquear resúmenes ilimitados, voces premium e intervalos de sincronización de 5 minutos, puedes actualizar a Premium con Telegram Stars.",
             footer_text: "© 2026 RSS Reader AI. Todos los derechos reservados. Co-desarrollado con ❤️ por Athena y Mohammad."
         }
     };
