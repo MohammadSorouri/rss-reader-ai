@@ -444,65 +444,77 @@
     <!-- Why RSS Reader AI (Old vs New Comparison Section) -->
     <section class="py-20 px-6 max-w-7xl mx-auto">
         <div class="text-center space-y-4 mb-16">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold uppercase tracking-wider">
+                <i class="fa-solid fa-scale-balanced"></i>
+                <span data-i18n="comp_badge">The AI Advantage</span>
+            </div>
             <h2 class="text-3xl sm:text-4xl font-black text-white" data-i18n="comp_title">Why Switch to AI-Powered Reading?</h2>
-            <p class="text-slate-400 max-w-2xl mx-auto text-sm sm:text-base" data-i18n="comp_sub">Traditional RSS feeds overwhelm your brain with hundreds of raw links. We extract pure signal and deliver executive intelligence.</p>
+            <p class="text-slate-400 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed" data-i18n="comp_sub">Traditional RSS feeds overwhelm your brain with hundreds of raw links. We extract pure signal and deliver executive intelligence.</p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
             <!-- Left: Traditional RSS Reader -->
-            <div class="bg-cardbg/60 border border-slate-800/80 p-8 rounded-3xl relative">
-                <div class="flex items-center gap-3 text-rose-400 font-bold text-lg mb-6">
-                    <div class="w-9 h-9 rounded-xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center">
-                        <i class="fa-solid fa-xmark"></i>
+            <div class="bg-cardbg/70 border border-rose-500/20 hover:border-rose-500/40 p-7 sm:p-8 rounded-3xl relative flex flex-col justify-between transition duration-300 text-start shadow-xl">
+                <div>
+                    <div class="flex items-center gap-3 text-rose-400 font-bold text-lg mb-6 pb-4 border-b border-slate-800/80">
+                        <div class="w-10 h-10 rounded-2xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center flex-shrink-0 text-base">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <span data-i18n="comp_old_title">Traditional RSS Readers</span>
                     </div>
-                    <span data-i18n="comp_old_title">Traditional RSS Readers</span>
+                    <ul class="space-y-4 text-xs sm:text-sm text-slate-400 leading-relaxed">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-xmark text-rose-500/80 mt-1 flex-shrink-0 text-sm"></i>
+                            <span data-i18n="comp_old_1">Drowning in 300+ unread articles every single day.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-xmark text-rose-500/80 mt-1 flex-shrink-0 text-sm"></i>
+                            <span data-i18n="comp_old_2">Manual skimming and eye fatigue through endless fluff.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-xmark text-rose-500/80 mt-1 flex-shrink-0 text-sm"></i>
+                            <span data-i18n="comp_old_3">Zero audio support — impossible to consume while driving or exercising.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-xmark text-rose-500/80 mt-1 flex-shrink-0 text-sm"></i>
+                            <span data-i18n="comp_old_4">Disconnected web and mobile apps with broken sync.</span>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="space-y-4 text-xs sm:text-sm text-slate-400">
-                    <li class="flex items-start gap-3">
-                        <i class="fa-solid fa-circle-xmark text-rose-500/70 mt-1"></i>
-                        <span data-i18n="comp_old_1">Drowning in 300+ unread articles every single day.</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <i class="fa-solid fa-circle-xmark text-rose-500/70 mt-1"></i>
-                        <span data-i18n="comp_old_2">Manual skimming and eye fatigue through endless fluff.</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <i class="fa-solid fa-circle-xmark text-rose-500/70 mt-1"></i>
-                        <span data-i18n="comp_old_3">Zero audio support — impossible to consume while driving or exercising.</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <i class="fa-solid fa-circle-xmark text-rose-500/70 mt-1"></i>
-                        <span data-i18n="comp_old_4">Disconnected web and mobile apps with broken sync.</span>
-                    </li>
-                </ul>
             </div>
 
-            <!-- Right: RSS Reader AI -->
-            <div class="bg-gradient-to-b from-cyan-950/40 via-slate-900/90 to-blue-950/40 border border-cyan-500/50 p-8 rounded-3xl relative shadow-2xl shadow-cyan-950/50">
-                <div class="flex items-center gap-3 text-cyan-400 font-bold text-lg mb-6">
-                    <div class="w-9 h-9 rounded-xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-white">
-                        <i class="fa-solid fa-check"></i>
-                    </div>
-                    <span data-i18n="comp_new_title">RSS Reader AI Platform</span>
+            <!-- Right: RSS Reader AI (Glowing Neon) -->
+            <div class="bg-gradient-to-b from-cyan-950/40 via-slate-900/90 to-blue-950/40 border border-cyan-500/50 hover:border-cyan-400 p-7 sm:p-8 rounded-3xl relative shadow-2xl shadow-cyan-950/60 flex flex-col justify-between transition duration-300 text-start group">
+                <!-- Glowing Top Badge -->
+                <div class="absolute -top-3.5 right-6 bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full shadow-lg shadow-cyan-500/30">
+                    <span data-i18n="comp_new_badge">Next-Gen Experience</span>
                 </div>
-                <ul class="space-y-4 text-xs sm:text-sm text-slate-200">
-                    <li class="flex items-start gap-3">
-                        <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
-                        <span data-i18n="comp_new_1">Concise, multi-level AI executive digests in under 3 minutes.</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
-                        <span data-i18n="comp_new_2">Neural Edge-TTS voice podcasts for effortless on-the-go listening.</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
-                        <span data-i18n="comp_new_3">Universal 1-tap OPML import from Feedly, Inoreader, and Substack.</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
-                        <span data-i18n="comp_new_4">100% two-way real-time sync across modern Web App and Telegram.</span>
-                    </li>
-                </ul>
+                <div>
+                    <div class="flex items-center gap-3 text-cyan-400 font-bold text-lg mb-6 pb-4 border-b border-cyan-500/20">
+                        <div class="w-10 h-10 rounded-2xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center flex-shrink-0 text-white shadow-inner">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <span data-i18n="comp_new_title">RSS Reader AI Platform</span>
+                    </div>
+                    <ul class="space-y-4 text-xs sm:text-sm text-slate-200 leading-relaxed font-medium">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-cyan-400 mt-1 flex-shrink-0 text-sm"></i>
+                            <span data-i18n="comp_new_1">Concise, multi-level AI executive digests in under 3 minutes.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-cyan-400 mt-1 flex-shrink-0 text-sm"></i>
+                            <span data-i18n="comp_new_2">Neural Edge-TTS voice podcasts for effortless on-the-go listening.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-cyan-400 mt-1 flex-shrink-0 text-sm"></i>
+                            <span data-i18n="comp_new_3">Universal 1-tap OPML import from Feedly, Inoreader, and Substack.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-cyan-400 mt-1 flex-shrink-0 text-sm"></i>
+                            <span data-i18n="comp_new_4">100% two-way real-time sync across modern Web App and Telegram.</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -714,6 +726,8 @@
             audio_demo_badge: "Live AI Audio Preview (15s)",
             audio_demo_title: "Experience Ultra-Natural Neural Briefings",
             audio_demo_sub: "Click play to listen to a live sample synthesized with Edge-TTS (Ava Neural).",
+            comp_badge: "The AI Advantage",
+            comp_new_badge: "Next-Gen Experience",
             comp_title: "Why Switch to AI-Powered Reading?",
             comp_sub: "Traditional RSS feeds overwhelm your brain with hundreds of raw links. We extract pure signal and deliver executive intelligence.",
             comp_old_title: "Traditional RSS Readers",
