@@ -279,6 +279,23 @@
         </div>
     </section>
 
+    <!-- Ecosystem & Trust Bar -->
+    <section class="border-y border-slate-900 bg-slate-950/80 py-7 px-6 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3 text-slate-400 text-xs sm:text-sm font-semibold tracking-wide uppercase">
+                <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                <span data-i18n="ecosystem_title">Universal Feeds & OPML Compatible</span>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-8 text-slate-400 text-xs sm:text-sm font-medium">
+                <div class="flex items-center gap-2 hover:text-white transition"><i class="fa-solid fa-newspaper text-cyan-400"></i> Substack</div>
+                <div class="flex items-center gap-2 hover:text-white transition"><i class="fa-brands fa-medium text-slate-200"></i> Medium</div>
+                <div class="flex items-center gap-2 hover:text-white transition"><i class="fa-brands fa-youtube text-rose-500"></i> YouTube</div>
+                <div class="flex items-center gap-2 hover:text-white transition"><i class="fa-solid fa-globe text-emerald-400"></i> Google News</div>
+                <div class="flex items-center gap-2 hover:text-white transition"><i class="fa-solid fa-file-import text-blue-400"></i> Feedly / Inoreader OPML</div>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section -->
     <section id="features" class="py-24 border-t border-slate-900 bg-slate-950/50 px-6 relative">
         <div class="max-w-7xl mx-auto text-center space-y-4 mb-16">
@@ -330,6 +347,43 @@
                     <p class="text-xs sm:text-sm text-slate-400 leading-relaxed" data-i18n="feat_4_desc">Log in with Google, Email, or Telegram. Link accounts with one tap so your folders, read status, and Pro perks stay 100% synchronized everywhere.</p>
                 </div>
             </div>
+        </div>
+
+        <!-- Interactive AI Audio Demo Bar -->
+        <div class="max-w-4xl mx-auto mt-12 bg-gradient-to-r from-cyan-950/60 via-slate-900/90 to-blue-950/60 border border-cyan-500/30 p-6 sm:p-7 rounded-3xl backdrop-blur-xl shadow-2xl shadow-cyan-950/40 relative overflow-hidden">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+                <div class="flex items-center gap-4 text-start w-full md:w-auto">
+                    <button id="preview-audio-play-btn" onclick="toggleAudioPreview()" class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white flex items-center justify-center text-xl shadow-lg shadow-cyan-500/30 transition transform hover:scale-105 active:scale-95 flex-shrink-0 cursor-pointer">
+                        <i id="preview-audio-icon" class="fa-solid fa-play ps-1"></i>
+                    </button>
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-[10px] font-bold tracking-wide uppercase mb-1">
+                            <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+                            <span data-i18n="audio_demo_badge">Live AI Audio Preview (15s)</span>
+                        </div>
+                        <h4 class="text-base sm:text-lg font-bold text-white leading-snug" data-i18n="audio_demo_title">Experience Ultra-Natural Neural Briefings</h4>
+                        <p class="text-xs text-slate-400 mt-0.5" data-i18n="audio_demo_sub">Click play to listen to a live sample synthesized with Edge-TTS (Ava Neural).</p>
+                    </div>
+                </div>
+
+                <!-- Live Audio Visualizer / Progress -->
+                <div class="w-full md:w-56 flex flex-row md:flex-col items-center md:items-end justify-between gap-2">
+                    <div class="flex items-center gap-1 h-6" id="preview-waveform-bars">
+                        <span class="w-1 bg-cyan-500/40 rounded-full h-2 transition-all duration-200"></span>
+                        <span class="w-1 bg-cyan-500/40 rounded-full h-4 transition-all duration-200"></span>
+                        <span class="w-1 bg-cyan-500/40 rounded-full h-6 transition-all duration-200"></span>
+                        <span class="w-1 bg-cyan-500/40 rounded-full h-3 transition-all duration-200"></span>
+                        <span class="w-1 bg-cyan-500/40 rounded-full h-5 transition-all duration-200"></span>
+                        <span class="w-1 bg-cyan-500/40 rounded-full h-2 transition-all duration-200"></span>
+                        <span class="w-1 bg-cyan-500/40 rounded-full h-6 transition-all duration-200"></span>
+                        <span class="w-1 bg-cyan-500/40 rounded-full h-4 transition-all duration-200"></span>
+                    </div>
+                    <div class="text-[11px] font-mono text-cyan-400 font-semibold" id="preview-audio-time">0:00 / 0:15</div>
+                </div>
+            </div>
+
+            <!-- HTML5 Audio Element -->
+            <audio id="landing-preview-audio" src="sample-digest.mp3" preload="metadata"></audio>
         </div>
     </section>
 
@@ -383,6 +437,72 @@
 [AI_CORE] Synthesis completed in 0.8s.
 [EDGE_TTS] Neural voice compiled: daily_digest.mp3
 [DISPATCH] Available on app.rssreaderai.com & Telegram!</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why RSS Reader AI (Old vs New Comparison Section) -->
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center space-y-4 mb-16">
+            <h2 class="text-3xl sm:text-4xl font-black text-white" data-i18n="comp_title">Why Switch to AI-Powered Reading?</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto text-sm sm:text-base" data-i18n="comp_sub">Traditional RSS feeds overwhelm your brain with hundreds of raw links. We extract pure signal and deliver executive intelligence.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <!-- Left: Traditional RSS Reader -->
+            <div class="bg-cardbg/60 border border-slate-800/80 p-8 rounded-3xl relative">
+                <div class="flex items-center gap-3 text-rose-400 font-bold text-lg mb-6">
+                    <div class="w-9 h-9 rounded-xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <span data-i18n="comp_old_title">Traditional RSS Readers</span>
+                </div>
+                <ul class="space-y-4 text-xs sm:text-sm text-slate-400">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-xmark text-rose-500/70 mt-1"></i>
+                        <span data-i18n="comp_old_1">Drowning in 300+ unread articles every single day.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-xmark text-rose-500/70 mt-1"></i>
+                        <span data-i18n="comp_old_2">Manual skimming and eye fatigue through endless fluff.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-xmark text-rose-500/70 mt-1"></i>
+                        <span data-i18n="comp_old_3">Zero audio support — impossible to consume while driving or exercising.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-xmark text-rose-500/70 mt-1"></i>
+                        <span data-i18n="comp_old_4">Disconnected web and mobile apps with broken sync.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right: RSS Reader AI -->
+            <div class="bg-gradient-to-b from-cyan-950/40 via-slate-900/90 to-blue-950/40 border border-cyan-500/50 p-8 rounded-3xl relative shadow-2xl shadow-cyan-950/50">
+                <div class="flex items-center gap-3 text-cyan-400 font-bold text-lg mb-6">
+                    <div class="w-9 h-9 rounded-xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-white">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <span data-i18n="comp_new_title">RSS Reader AI Platform</span>
+                </div>
+                <ul class="space-y-4 text-xs sm:text-sm text-slate-200">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
+                        <span data-i18n="comp_new_1">Concise, multi-level AI executive digests in under 3 minutes.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
+                        <span data-i18n="comp_new_2">Neural Edge-TTS voice podcasts for effortless on-the-go listening.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
+                        <span data-i18n="comp_new_3">Universal 1-tap OPML import from Feedly, Inoreader, and Substack.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
+                        <span data-i18n="comp_new_4">100% two-way real-time sync across modern Web App and Telegram.</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -586,6 +706,26 @@
             hero_badge: "⚡ Next-Gen AI Feed Reader & Podcast Platform",
             hero_title_1: "Stop Reading Clutter.",
             hero_title_2: "Consume AI Intelligence.",
+                        floating_audio_title: "2.5 min Audio Digest",
+            floating_audio_sub: "Edge-TTS Neural Voice",
+            floating_digest_title: "Executive Briefing",
+            floating_digest_sub: "3 Key Bullet Insights",
+            ecosystem_title: "Universal Feeds & OPML Compatible",
+            audio_demo_badge: "Live AI Audio Preview (15s)",
+            audio_demo_title: "Experience Ultra-Natural Neural Briefings",
+            audio_demo_sub: "Click play to listen to a live sample synthesized with Edge-TTS (Ava Neural).",
+            comp_title: "Why Switch to AI-Powered Reading?",
+            comp_sub: "Traditional RSS feeds overwhelm your brain with hundreds of raw links. We extract pure signal and deliver executive intelligence.",
+            comp_old_title: "Traditional RSS Readers",
+            comp_old_1: "Drowning in 300+ unread articles every single day.",
+            comp_old_2: "Manual skimming and eye fatigue through endless fluff.",
+            comp_old_3: "Zero audio support — impossible to consume while driving or exercising.",
+            comp_old_4: "Disconnected web and mobile apps with broken sync.",
+            comp_new_title: "RSS Reader AI Platform",
+            comp_new_1: "Concise, multi-level AI executive digests in under 3 minutes.",
+            comp_new_2: "Neural Edge-TTS voice podcasts for effortless on-the-go listening.",
+            comp_new_3: "Universal 1-tap OPML import from Feedly, Inoreader, and Substack.",
+            comp_new_4: "100% two-way real-time sync across modern Web App and Telegram.",
             hero_desc: "Transform hundreds of unread articles and newsletters into structured executive summaries and natural voice podcasts. Available on high-speed Web App and real-time Telegram companion.",
             hero_btn_web: "Open Web App (Free)",
             hero_btn_bot: "Telegram Companion",
@@ -905,6 +1045,75 @@
             footer_text: "© 2026 RSS Reader AI. Todos los derechos reservados. Desarrollado con ❤️ por Athena & Mohammad."
         }
     };
+
+    // Interactive Audio Preview Player
+    let previewAudio = null;
+    let waveformInterval = null;
+
+    function toggleAudioPreview() {
+        if (!previewAudio) {
+            previewAudio = document.getElementById('landing-preview-audio');
+            if (previewAudio) {
+                previewAudio.addEventListener('timeupdate', function() {
+                    const cur = Math.floor(previewAudio.currentTime);
+                    const dur = Math.floor(previewAudio.duration) || 15;
+                    const curStr = cur < 10 ? '0' + cur : cur;
+                    const durStr = dur < 10 ? '0' + dur : dur;
+                    const el = document.getElementById('preview-audio-time');
+                    if (el) el.textContent = '0:' + curStr + ' / 0:' + durStr;
+                });
+                previewAudio.addEventListener('ended', function() {
+                    resetAudioPreview();
+                });
+            }
+        }
+
+        if (!previewAudio) return;
+
+        const icon = document.getElementById('preview-audio-icon');
+        if (previewAudio.paused) {
+            previewAudio.play().then(function() {
+                if (icon) icon.className = 'fa-solid fa-pause';
+                startWaveformAnimation();
+            }).catch(function(err) {
+                console.error('Audio play error:', err);
+            });
+        } else {
+            previewAudio.pause();
+            if (icon) icon.className = 'fa-solid fa-play ps-1';
+            stopWaveformAnimation();
+        }
+    }
+
+    function startWaveformAnimation() {
+        stopWaveformAnimation();
+        const bars = document.querySelectorAll('#preview-waveform-bars span');
+        waveformInterval = setInterval(function() {
+            bars.forEach(function(bar) {
+                const h = Math.floor(Math.random() * 18) + 6;
+                bar.style.height = h + 'px';
+                bar.classList.remove('bg-cyan-500/40');
+                bar.classList.add('bg-cyan-400');
+            });
+        }, 150);
+    }
+
+    function stopWaveformAnimation() {
+        if (waveformInterval) clearInterval(waveformInterval);
+        const bars = document.querySelectorAll('#preview-waveform-bars span');
+        bars.forEach(function(bar) {
+            bar.classList.remove('bg-cyan-400');
+            bar.classList.add('bg-cyan-500/40');
+        });
+    }
+
+    function resetAudioPreview() {
+        stopWaveformAnimation();
+        const icon = document.getElementById('preview-audio-icon');
+        if (icon) icon.className = 'fa-solid fa-play ps-1';
+        const el = document.getElementById('preview-audio-time');
+        if (el) el.textContent = '0:00 / 0:15';
+    }
 
     function setLanguage(lang) {
         if (!translations[lang]) lang = 'en';
